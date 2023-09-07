@@ -26,12 +26,15 @@ public class PlayerController4 : MonoBehaviour
     float explosionRadius = 50;
     bool smashing = false;
     float floorY;
+    public bool gameOver;
 
     // Start is called before the first frame update
     void Start()
     {
         playerRb = GetComponent<Rigidbody>();
         focalPoint = GameObject.Find("FocalPoint");
+
+        gameOver = false;
     }
 
     // Update is called once per frame
@@ -56,6 +59,12 @@ public class PlayerController4 : MonoBehaviour
         {
             smashing = true;
             StartCoroutine(Smash());
+        }
+
+        if(transform.position.y < -5)
+        {
+            Destroy(gameObject);
+            gameOver = true;
         }
     }
 

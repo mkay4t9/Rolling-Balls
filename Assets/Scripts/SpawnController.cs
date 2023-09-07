@@ -18,9 +18,12 @@ public class SpawnController : MonoBehaviour
 
     public int bossRound;
 
+    private PlayerController4 plScript;
+
     // Start is called before the first frame update
     void Start()
     {
+        plScript = GameObject.Find("Player").GetComponent<PlayerController4>();
         // Instantiate(powerupsPrefab, GenerateRandomPos(), enemyPrefab.transform.rotation);
     }
 
@@ -28,7 +31,7 @@ public class SpawnController : MonoBehaviour
     void Update()
     {
         enemyCounter = FindObjectsOfType<EnemyController>().Length;
-        if(enemyCounter == 0)
+        if(enemyCounter == 0 && !plScript.gameOver)
         {
             if (EnemyWave % bossRound == 0)
             {
