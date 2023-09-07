@@ -1,0 +1,7 @@
+"Rolling Balls" is an exciting game project that embarked on its development journey in September 2023, utilizing the powerful Unity game engine. The primary objective behind crafting this game was to delve into the fundamentals of Unity and hone essential skills, including Game Mechanics and Game Physics, which were acquired through the "Unity Learn" online tutorials.
+
+In "Rolling Balls," the focus is on delivering a logical and captivating gaming experience that engages players. The gameplay revolves around pushing incoming opponents of various sizes, ranging from small to mid-sized and even large opponents. To intensify the challenge, a dynamic wave system was integrated. Whenever players successfully eliminate all opponents on the platform, a new wave emerges, presenting increased difficulty levels. However, one must tread carefully, as falling off the platform results in a game over.
+
+To enhance gameplay strategy, three distinct power-ups are at players' disposal to aid in dealing with the relentless opponents. All in-game assets, including visuals and resources, were thoughtfully provided by Unity Technologies, and the game was crafted using the "Create With Code" course library package.
+
+"Rolling Balls" offers an engaging platform to apply Unity knowledge and provides an entertaining experience for both players and budding game developers.
